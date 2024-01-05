@@ -20,9 +20,9 @@ h3 {
 }
 
 p {
-    font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    font-size: 17px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .final-container {
@@ -52,8 +52,8 @@ p {
 .slider-wrapper .slide-button {
     position: absolute;
     top: 50%;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     color: #fff;
     border: none;
     outline: none;
@@ -136,6 +136,27 @@ p {
     right: 0;
     top: -10px;
     bottom: -10px;
+}
+
+.play-Button {
+    margin-top: 20px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: #f1f4fd;
+    margin-bottom: 40px;
+}
+
+.play-Button:hover{
+    cursor: pointer;
+    background-color: #c6d0f1;
+}
+
+.play-Button:active{
+    background-color: #444;
+    color: #fff;
 }
 
 @media (max-width: 1023px) {
