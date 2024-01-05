@@ -1,4 +1,8 @@
 function uponLoad() {
+    // Show loading overlay
+    const loadingOverlay = document.getElementById('loading-overlay');
+    loadingOverlay.style.display = 'flex';
+
     const imageList = document.querySelector('.slider-wrapper .image-list');
     const slideButtons = document.querySelectorAll('.slider-wrapper .slide-button');
     const scrollbarThumb = document.querySelector('.slider-scrollbar .scrollbar-thumb');
@@ -99,8 +103,6 @@ function uponLoad() {
         requestAnimationFrame(scrollStep);
     };
     
-    
-
     const play = () => {
         if (audio.paused) {
             audio.play();
@@ -112,6 +114,10 @@ function uponLoad() {
         }
     };
     
+    // Hide loading overlay when content is loaded
+    const hideLoadingOverlay = () => {
+        loadingOverlay.style.display = 'none';
+    };
 
     playButton.addEventListener('click', play);
 
@@ -153,6 +159,9 @@ function uponLoad() {
         maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
         handleSlideButtons();
         updateThumb(); // Update thumb size and position when images are loaded
+
+        // Hide loading overlay when content is loaded
+        hideLoadingOverlay();
     }
 }
 
