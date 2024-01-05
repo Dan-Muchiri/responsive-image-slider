@@ -160,8 +160,12 @@ p {
 }
 
 @media (max-width: 1023px) {
+    body{
+        height: 650px;
+    }
     h3{
         margin-top: 15px;
+        margin-bottom: 10px;
     }
     p {
         margin-left:5px;
@@ -171,6 +175,7 @@ p {
         font-size: 12px;
     }
     .outer-container {
+        margin-top: 25px;
         max-width: 90%;
         height: 330px;
     }
