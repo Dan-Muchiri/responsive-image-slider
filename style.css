@@ -84,7 +84,7 @@ p {
     margin-bottom: 20px;
     overflow-x: auto;
     scrollbar-width: none;
-    grid-template-columns: repeat(126, 1fr);
+    grid-template-columns: repeat(144, 1fr);
 }
 
 .slider-wrapper .image-list::-webkit-scrollbar {

@@ -141,7 +141,7 @@ function uponLoad() {
     function fetchImages() {
         imageList.innerHTML = '';
 
-        for (let i = 1; i <= 126; i++) {
+        for (let i = 1; i <= 144; i++) {
             const imageUrl = `./images/${i}.jpeg`;
             const imgElement = document.createElement('img');
             imgElement.src = imageUrl;
